@@ -27,5 +27,6 @@ class BMICalculator {
      }
     }
 }
-
-module.exports = BMICalculator
+if (window?.module) {
+    module.exports = BMICalculator
+}
