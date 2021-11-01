@@ -10,6 +10,7 @@
     "superstatic": "^7.1.0"
   },
   "scripts": {
-    "start": "node serve.js"
+    "start": "node serve.js",
+    "test:unit": "jest --passWithNoTests --rootDir=spec"
   }
 }
