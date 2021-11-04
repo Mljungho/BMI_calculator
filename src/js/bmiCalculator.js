@@ -27,16 +27,31 @@ class BMICalculator {
     }
   }
 }
-if (typeof module !== "undefined" && module.exports) {
-  module.exports = BMICalculator;
-}
+
 
 let button = document.querySelector("button");
 let weightInput = document.getElementById("weight");
 let heightInput = document.getElementById("height");
+const resultDiv = document.getElementById("results");
+
 button.addEventListener("click", () =>
   new BMICalculator().calculateMetric({
     height: heightInput.value,
     weight: weightInput.value,
-  })
-);
+}))
+
+
+ 
+if (typeof module !== "undefined" && module.exports) {
+  module.exports = BMICalculator;
+}
+
+button.addEventListener("click",myFunction);
+
+function myFunction() {
+      const paragraph = document.createElement('p')
+      let text = " ${bmiResults.value} "
+      paragraph.innerText = text
+      div = document.getElementById("results")
+      div.appendChild(paragraph)
+} 

@@ -1,0 +1,11 @@
+body {
+    background-color: gray;
+    background-size: cover;
+  }
+  h1,
+  h2 {
+    color: cyan;
+  }
+  strong {
+    color: darkmagenta;
+  }
